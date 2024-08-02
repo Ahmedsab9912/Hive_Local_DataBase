@@ -4,7 +4,7 @@ import 'package:hive_project/boxes/boxes.dart';
 import 'package:hive_project/models/notes_model.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         Row(
                           children: [
                             Text(data[index].title.toString()),
-                            Spacer(),
+                            const Spacer(),
                             InkWell(
                                 onTap: () {
                                   _editMyDialog(
